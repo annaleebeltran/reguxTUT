@@ -4,9 +4,11 @@ This is a tutorial on how to match an HTML tag using regex. The regex will match
 
 ## Summary: A quick look at the regex
 
-```
+A Regex or known as a regular expression is a sequence of characters that defines a search pattern. Usually these patterns are used by string-searching algorithms for "find" or "find and replace" on string operators. It will also look for inputs of validation. It is commonly used in theoretical computer science thougt processes.
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Using a string of regux, this code looks for a match HTML tag.
+
+Ex: /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
 
 ## Table of Contents
 
@@ -48,4 +50,4 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Annalee is a full stack developer, please see her work at:
