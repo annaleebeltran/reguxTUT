@@ -10,44 +10,45 @@ Using a string of regux, this code looks for a match HTML tag.
 
 Ex: /^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
 
-## Table of Contents
-
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
-
 ## Regex Components
 
-### Anchors
+* /
+* ^
+* <
+* [a-z]
+* +
+* ( ... )
+* [^>]
+* $
 
-### Quantifiers
+## Regex Explanation
 
-### OR Operator
+## /
+- Every regex is always enclosed in forward slashes. Programming languages recognize this syntax to indicate a regular expression.
 
-### Character Classes
 
-### Flags
+## ^
+- The caret symbol ^ is used to match the beginning of a string. In this case, the caret symbol is used to match the beginning of the HTML tag.
 
-### Grouping and Capturing
+## <
+- " < " stands on it's own, it is not enclosed in any parentheses or brackets. This means that the pattern will match one and only one single open bracket, as expected from an HTML tag.
 
-### Bracket Expressions
+## [a-z]
+- The brackets [ ] are used to define a character class. The character class [a-z] will match any lowercase letter from a to z. This is used to match the first letter of the HTML tag.
 
-### Greedy and Lazy Match
+## +
+- The plus sign + is a quantifier. It will match one or more of the preceding token. In this case, it will match one or more lowercase letters from a to z and marking how many times the character class [a-z] will be matched.
 
-### Boundaries
+## ( ... )
+- The parentheses ( ) are used to define a capturing group. The capturing group will capture the text matched by the regex inside the parentheses. In this case, the capturing group is used to capture the HTML tag.
 
-### Back-references
+## [^>]
+- The brackets [ ] are used to define a character class. The character class [^>] will match any character that is not a closing bracket thus exculding any matching characters from its class. This is used to match the content of the HTML tag.
 
-### Look-ahead and Look-behind
+## $
+- The dollar sign $ is used to match the end of a string. In this case, the dollar sign is used to match the end of the HTML tag. This is the close of the regex tag.
 
 ## Author
 
 Annalee is a full stack developer, please see her work at:
+https://github.com/annaleebeltran
