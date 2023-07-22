@@ -24,7 +24,7 @@ This application is a tutorial on how to find an HTML tag in regex.
 
 # Usage
 
-![alt text](./)
+![alt text](./Develop/reguxtut.png)
 
 # URL
 
